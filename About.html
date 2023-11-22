@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <title>About page</title>
+    <style>
+        .about-me {
+            color: rgb(255, 255, 255);
+            width: 100%;
+            height: calc(100% - 100px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-me-inner {
+            width: 80%;
+            height: 100%;
+            /* background-color: rgb(22, 24, 23); */
+            background-color: rgb(16, 15, 15);
+            /* border: 1px solid gray; */
+            border-radius: 10px;
+            margin-top: 40px;
+            overflow: auto;
+        }
+
+        .about-me-inner i {
+            font-size: 4vh;
+            padding: 0 10px;
+            color: rgb(238, 230, 230);
+        }
+
+        .about-me-inner h2 {
+            font-size: 3vmax;
+            margin: 1.2vh 0 0 0;
+            /* color: rgb(25, 197, 160); */
+            color: #4a5176;
+            text-align: justify;
+            margin: 2vw 3vw;
+        }
+
+        .about-me-inner p {
+            font-size: 2vmax;
+            margin: 2vw 3vw;
+        }
+
+        .about-me-inner ul li {
+            font-size: 2vmax;
+            margin: 2vw 7vw;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="components">
+            <a href="index.html" class="split">Portfolio</a>
+            <i class="ri-menu-fill" id="menu" onclick="showVertical()"></i>
+            <a href="contact.html" class="right">contact</a>
+            <a href="Service.html" class="right">Service</a>
+            <a href="About.html" class="right">About</a>
+            <a href="index.html" class="right">Home</a>
+        </div>
+    </nav>
+    <div class="vertical" id="ver">
+        <a href="index.html" class="right"><i class="ri-home-line"> Home</i></a>
+        <a href="About.html" class="right"><i class="ri-user-3-fill"> About</i></a>
+        <a href="Service.html" class="right"><i class="ri-service-line"> Service</i></a>
+        <a href="contact.html" class="right"><i class="ri-phone-line"> Contact</i></a>
+    </div>
+    <div class="about-me demo">
+        <div class="about-me-inner">
+
+            <!-- <h2>About me :- </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat accusantium vero placeat perferendis
+                quam possimus modi quos alias aut veritatis? Commodi sint minima reprehenderit eius explicabo velit iure
+                voluptatem unde debitis! Eaque veniam quam voluptatem ex. Tempora laudantium vero placeat tenetur,
+                dolore ad obcaecati autem molestiae nostrum, natus facere? Magni!</p> -->
+
+            <h2>About me: </h2>
+            <p>Hey, my name is Saicharan. I am a full-stack web developer. I completed my Java full-stack web
+                development course from Vcube Software Solutions Pvt. Ltd.,Hyderabad.</h2>
+            <ul>
+                <li>Bachelor of Technology (ECE)
+                    <ul>
+                        <li>I have completed my B.Tech. graduation from Vardhaman College of Engineering, Hyderabad.
+                            <strong>(2019-23)</strong>
+                        </li>
+                    </ul>
+                </li>
+                <li>Class XII
+                    <ul>
+                        <li>I completed my intermediate with an aggregate of 88% from Impluse Jr. College, Hyderabad.
+                            <strong>(2017-19)</strong>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Projects I worked on: </h2>
+            <ul>
+                <li><strong>Temperature Convertor: </strong><a
+                        href="https://saicharan0123.github.io/TemperatureConvertor/">click here</a></li>
+                <li><strong>Travel-Expert (Still Working): </strong><a
+                        href="https://saicharan0123.github.io/TravelExpert/">click here</a></li>
+            </ul>
+
+
+            <p><i class="ri-github-fill"></i>Check my Github profile <a
+                    href="https://github.com/saicharan0123?tab=repositories"> for more</a></p>
+
+        </div>
+    </div>
+</body>
+
+</html>

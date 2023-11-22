@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <title>Service page</title>
+    <style>
+        .service{
+            color : rgb(255, 255, 255);
+            width: 100%;
+            height: calc(100% - 100px);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .service-inner{
+            width:80%;
+            height:100%;
+            /* background-color: rgb(20, 23, 22); */
+            background-color: rgb(16, 15, 15);
+            /* border:1px solid gray; */
+            border-radius: 10px;
+            margin-top:40px;
+            overflow: auto;
+        }
+        .service .service-inner h2 {
+            font-size: 3vmax;
+            margin: 1.2vh 0 0 0;
+            /* color: rgb(25, 197, 160); */
+            color: #4a5176;
+            text-align: justify;
+            margin: 2vw 3vw;
+        }
+        .service .service-inner p{
+            font-size: 2vmax;
+            margin: 2vw 3vw;
+        }
+        .service .service-inner ul li {
+            font-size: 2vmax;
+            margin: 2vw 7vw;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="components">
+            <a href="index.html" class="split">Portfolio</a>
+            <i class="ri-menu-fill" id="menu" onclick="showVertical()"></i>
+            <a href="contact.html" class="right">contact</a>
+            <a href="Service.html" class="right">Service</a>
+            <a href="About.html" class="right">About</a>
+            <a href="index.html" class="right">Home</a>
+        </div>
+    </nav>
+    <div class="vertical" id="ver">
+        <a href="index.html" class="right"><i class="ri-home-line"> Home</i></a>
+        <a href="About.html" class="right"><i class="ri-user-3-fill"> About</i></a>
+        <a href="Service.html" class="right"><i class="ri-service-line"> Service</i></a>
+        <a href="contact.html" class="right"><i class="ri-phone-line"> Contact</i></a>
+    </div>
+    <div class="service demo">
+        <div class="service-inner">
+            <h2>I am a part-time free lancer.</h2>
+            <p>I am new to freelancing, but I am very passionate and focused about my work. I will give my 100%, and I always try to give the best work to clients.</p>
+            <h2>Services I provide: </h2>
+            <ul>
+                <li>Fully functional and responsive website's </li>
+                <li>An elegant landing page</li>
+                <li>Custom portfolio design</li>
+                <li>Single-page applications using Angular and ReactJS</li>
+            </ul>
+            <p>Check my profile <a href="https://www.fiverr.com/s2/a552037c5e" target="_blank">for more details</a></p>
+        </div>
+    </div>
+</body>
+</html>

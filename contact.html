@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <title>contact page</title>
+    <style>
+        .contact-box {
+            width: 100%;
+            height: calc(100% - 100px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+        }
+
+        h2 {
+            font-size: 4.5vw;
+            margin: 20px 5px;
+            padding: 0px 0px;
+            /* color: white; */
+            color: #4a5176;
+        }
+
+        .contact-box-inner {
+            background-color: rgb(16, 15, 15);
+            /* border: 1px solid gray; */
+            border-radius: 30px;
+            width: 70%;
+            height: 80%;
+            text-align: center;
+            /* box-shadow: 3px 3px rgb(58, 60, 61); */
+            overflow: auto;
+        }
+        a{
+            text-decoration: none;
+            color: none;
+            background-color: none;
+        }
+        .icons i {
+            font-size: 45px;
+            margin : 0 10px;
+            color:rgb(161, 152, 152);
+        }
+        .contact-box-inner img {
+            height: auto;
+            width: auto;
+            border-radius: 100px;
+            border: 2px solid black;
+            margin:20px 5px;
+        }
+        .icons {
+            margin-top:3%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="components">
+            <a href="index.html" class="split">Portfolio</a>
+            <i class="ri-menu-fill" id="menu" onclick="showVertical()"></i>
+            <a href="contact.html" class="right">contact</a>
+            <a href="Service.html" class="right">Service</a>
+            <a href="About.html" class="right">About</a>
+            <a href="index.html" class="right">Home</a>
+        </div>
+    </nav>
+    <div class="vertical" id="ver">
+        <a href="index.html" class="right"><i class="ri-home-line"> Home</i></a>
+        <a href="About.html" class="right"><i class="ri-user-3-fill"> About</i></a>
+        <a href="Service.html" class="right"><i class="ri-service-line"> Service</i></a>
+        <a href="contact.html" class="right"><i class="ri-phone-line"> Contact</i></a>
+    </div>
+    <div class="contact-box demo">
+        <div class="contact-box-inner">
+            <h2>Feel free to contact me!</h2>
+            <img src="charanpro.jpg" alt="Error">
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/charan-charan-301a131a5/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://www.instagram.com/im__charan_/" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://github.com/saicharan0123?tab=repositories" target="_blank"><i class="ri-github-fill"></i></a>
+                <a href="https://www.facebook.com/saicharan.nuthipalli" target="_blank"><i class="ri-facebook-box-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

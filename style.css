@@ -1,0 +1,368 @@
+:root {
+    --col: #4a5176;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+nav {
+    background-color: var(--col);
+    overflow: auto;
+}
+
+nav a.split {
+    float: left;
+}
+
+nav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav a.right:hover {
+    background-color: #ddd;
+    color: black;
+    /* border-radius: 10px; */
+
+}
+
+nav i {
+    margin: 10px 10px;
+    color: #f2f2f2;
+    float: right;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+nav i:hover {
+    color: black;
+}
+
+nav i#menu {
+    display: none;
+}
+
+
+.main {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://thumbs.dreamstime.com/b/coding-software-developer-work-ar-new-design-dashboard-computer-icons-scrum-agile-development-code-fork-versioning-125629500.jpg"); */
+
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Bg_home.jpg");
+
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://themepack.me/i/c/749x468/media/g/1871/dark-abstract-theme-gn17.jpg"); */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 62px);
+}
+
+.main .in {
+    width: 60%;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 3px 2px #222324, 2px 3px #222324, 3px 4px #222324;
+    height: calc(100%-100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .in a {
+    font-size: medium;
+    text-shadow: none;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 10px 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    /* background-color: rgb(23, 206, 223); */
+    background-color: var(--col);
+    color: black;
+
+}
+
+.main .in a:hover {
+    background-color: #4f5899;
+}
+
+.image1 img {
+    width: 89%;
+    /* opacity: 50%; */
+}
+
+.image1 {
+    width: 40%;
+}
+
+.main .in img#whenVertical {
+    display: none;
+    width: 30%;
+    height: 30%;
+    border-radius: 20px;
+
+}
+
+.in h1#vPort {
+    font-size: 5.5vmax;
+    text-align: center;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    display: none;
+}
+
+
+.in h1#hPort {
+    font-size: 5.5vmax;
+    text-align: center;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.in h1#wel {
+    font-size: 5.5vmax;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 0px 0px;
+    display: none;
+}
+
+.in p {
+    margin: 0px 0px;
+    font-size: 1.4vmax;
+    padding: 0px 10px;
+    text-align: justify;
+}
+
+.in h1 span {
+    /* color: rgb(23, 206, 223); */
+    color: var(--col);
+}
+
+.vertical {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: none;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+    background-color: #b3ffe6;
+    align-items: center;
+    padding-top: 20px;
+    animation: verticalAnimation;
+    animation-duration: 1s;
+    overflow: auto;
+}
+
+.vertical a {
+    width: 100%;
+    text-align: center;
+    /* border:2px solid gray; */
+    /* border-bottom: 1px solid gray; */
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin: 10px 0px;
+    padding: 20px 0px;
+}
+
+.vertical a:hover {
+    background-color: white;
+    color: black;
+    animation: zoom;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    from {
+        font-size: 32px;
+    }
+
+    to {
+        font-size: 35px;
+    }
+}
+
+@keyframes verticalAnimation {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .in h1#vPort {
+        display: inline;
+    }
+
+    .in h1#hPort {
+        display: none;
+    }
+
+    .main .in h1#wel {
+        display: inline;
+    }
+
+    .main .image1 {
+        display: none;
+    }
+
+    .main .in img#whenVertical {
+        display: block;
+    }
+}
+
+@media screen and (max-width : 680px) {
+    .main .image1 {
+        display: none;
+    }
+
+    .main .in {
+        width: 100%;
+        margin: 0px 20px;
+        /* padding: 0px 20px; */
+    }
+
+    .main .in h1 {
+        text-align: center;
+    }
+
+    .main .in p {
+        text-align: justify;
+    }
+
+    .main .in a {
+        font-size: small;
+    }
+
+    /* ------------------------------- */
+
+    nav .components .right {
+        display: none;
+    }
+
+    nav i#menu {
+        display: block;
+        font-size: 4.5vmax;
+    }
+
+    /* ------------------------------- */
+
+    .about-me .about-me-inner {
+        width: 95%;
+        height: 100%;
+
+    }
+
+    /* .about-me .about-me-inner h2 {
+        font-size: 4.0vmax;
+    } */
+
+    .about-me .about-me-inner p {
+        line-height: 20px;
+        font-size: 2vmax;
+        text-align: justify;
+    }
+
+    .about-me .about-me-inner ul li {
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    /* ------------------------------- */
+    .service .service-inner {
+        width: 95%;
+        height: 100%;
+
+    }
+
+    .service .service-inner p {
+        line-height: 20px;
+        font-size: 2vmax;
+        text-align: justify;
+    }
+
+    .service .service-inner ul li {
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    /* ------------------------------- */
+    .contact-box {
+        align-items: initial;
+    }
+
+    .contact-box .contact-box-inner {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-box .contact-box-inner h2 {
+        margin: 20px 5px;
+        font-size: 35px;
+    }
+
+    .contact-box .contact-box-inner img {
+        margin: 20px 5px;
+
+    }
+
+}
+
+/* @media screen and (max-width:415px) {
+    .in h1#vPort {
+        display: inline;
+    }
+
+    .in h1#hPort {
+        display: none;
+    }
+} */
